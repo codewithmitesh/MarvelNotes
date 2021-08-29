@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
     fun getNotes(view: View) {
         val intent = Intent(this,NotesMain::class.java)
         startActivity(intent)
+
     }
 }
