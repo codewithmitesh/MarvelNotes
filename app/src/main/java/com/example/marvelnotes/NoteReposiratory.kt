@@ -14,5 +14,4 @@ class NoteReposiratory(private val notesDao: notesDao) {
     }
 
 
-
 }

@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = arrayOf(Notes::class), version = 1, exportSchema = false)
 public abstract class noteDatabase : RoomDatabase() {
 
+
     abstract fun getnotesDao(): notesDao;
 
     companion object {
