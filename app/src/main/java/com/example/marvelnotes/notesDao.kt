@@ -2,10 +2,7 @@ package com.example.marvelnotes
 
 import android.provider.ContactsContract
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
 
 
 @Dao
@@ -16,6 +13,6 @@ interface notesDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(notes: Notes)
 
-    @Query("DELETE FROM Notes_Table")
+    @Delete
     suspend fun delete(notes: Notes)
 }
